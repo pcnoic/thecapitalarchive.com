@@ -1,11 +1,17 @@
-FROM klakegg/hugo:ext-alpine
+FROM alpine:latest AS build
 
-WORKDIR /src
+RUN apk add --update hugo
+
+WORKDIR /opt/HugoApp
 
 COPY . .
 
-RUN hugo --minify
+RUN hugo
 
-EXPOSE 80
+FROM nginx:1.25-alpine
 
-CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost"]
+WORKDIR /usr/share/nginx/html
+
+COPY --from=build /opt/HugoApp/public .
+
+EXPOSE 80/tcp
