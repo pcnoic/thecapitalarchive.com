@@ -1,0 +1,50 @@
+baseurl: "https://thecapitalarchive.org/"
+title: "The Capital Archive"
+theme: "zen"
+languageCode: "en-US"
+
+params:
+  alpine: true
+  author:
+    name: Christos Alexiou
+    url: https://x.com/pcnoic
+  blogSections:
+    - blog
+    - post
+  cookieConsent: true
+  contact: "info@thecapitalarchive.org"
+  copyright: "This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)."
+  description: "A history of the financial markets, key business and investing figures, landmark events like panics and recessions, and the financial world's inner workings."
+  favicon: "/test.png"
+  feedlinks: true
+  footer: "Thank you for taking the time."
+  internalPagination: true
+  jquery: true
+  logo: true
+  logoHeight: "50px"
+  logoWidth: "50px"
+  realfavicongenerator: true
+  mainSections:
+    - section1
+    - section2
+
+  podcast:
+    title: ""
+    description: ""
+    image: ""
+    category:
+      name: ""
+      subcategories: []
+    explicit: false
+    author: ""
+    owner:
+      name: ""
+      email: ""
+    lang: ""
+    block: no
+    complete: no
+    type: episodic
+    newfeed: ""
+    cdn: ""
+    local: false
+    preload: metadata
